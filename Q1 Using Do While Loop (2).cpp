@@ -1,5 +1,5 @@
+#include <iostream>
 using namespace std;
-#include<iostream>
 int main()
 {
 	int a,b,sum;
@@ -7,14 +7,14 @@ int main()
 	cin>>a;
 	b=0;
 	sum=0;
-while(b<a)
-	{
-	 sum=sum+b;
-	 b++;
-	 cout<<b;
-		
+	if(a<b)	cout<<sum;
+	else{
+		do{
+			sum=sum+b;
+			b++;
+			cout<<b;
+		}while(b<a);
+		cout<<sum;
 	}
-	
-cout<<sum;
-	
+	return 0;
 }
